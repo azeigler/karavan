@@ -6,7 +6,7 @@ using NUnit.Framework;
 using Karavan.Web.Helpers;
 using Karavan.Web.Models;
 
-namespace Karavan.Test.Helpers
+namespace Karavan.Test.Tests
 {
     [TestFixture]
     public class GoogleMapsTest
