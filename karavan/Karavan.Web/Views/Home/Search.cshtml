@@ -1,0 +1,468 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container">
+    <div class="row gridContainer u-topTwenty">    
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10 gridContainer-panel" >
+            <div class="gridContainer-header">
+                <div class="u-topFivePad u-left">
+                    <h1 class="gridContainer-title">Search.</h1>
+                </div>
+                <div class="typeLabel u-leftTen">BARS & RESTAURANTS</div>
+                <div class="typeLabel u-leftTen">WITHIN 1 MILE</div>
+                <div class="typeLabel u-leftTen">ZIP CODE 44141</div>
+                <div class="js-hide-button btn actionButtonLarge u-right">
+                    Hide <span class="glyphicon glyphicon-chevron-up"></span>
+                </div>
+                <div class="js-edit-button btn actionButtonLarge u-right" style="display: none">
+                    Edit <span class="glyphicon glyphicon-chevron-down"></span>
+                </div>              
+            </div>
+            <div class="js-searchPanel">
+                <hr class="u-topFive"/>
+                <div class="searchPanel">
+                    <div class="row">
+                        <div class="col-md-3">
+                            City: <input type="text" style="width: 150px" />
+                        </div>
+                        <div class="col-md-3">
+                            State:
+                            <select class="searchPanel-dropdown">
+                                <option>OH</option>
+                                <option>MI</option>
+                            </select>
+                            <span class="searchPanel-altText u-leftFifty">OR</span>
+                        </div>
+                        <div class="col-md-2">
+                            Zip: <input type="text" style="width: 70px" />
+                        </div>
+                        <div class="col-md-4">
+                            <span class="searchPanel-altText u-rightFifty">AND</span>
+                            Radius:
+                            <select class="searchPanel-dropdown">
+                                <option>1 Mile</option>
+                                <option>20 Miles</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5" style="font-family: 'Work Sans', sans-serif; margin-top:20px; padding-left: 58px">
+                            <span class="searchPanel-altText u-rightFifty">THEN</span>
+                            Category:
+                            <select style="padding: 4px">
+                                <option>All</option>
+                                <option>Entertainment</option>
+                                <option>Food & Drink</option>
+                                <option>Landmarks</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3" style="font-family: 'Work Sans', sans-serif; margin-top:20px">
+                            Order By:
+                            <select style="padding: 4px">
+                                <option>Newest</option>
+                                <option>Closest</option>
+                                <option>Most Liked</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4" style="font-family: 'Work Sans', sans-serif; margin-top:20px">
+                            <span class="searchPanel-altText">- - - - - - - - - - - - - - -></span>
+                            <div class="btn searchCtaButton">go.</div>
+                        </div>
+                    </div>
+                </div>                            
+            </div>                           
+        </div>
+    </div>
+</div>
+<div class="container gridContainer">
+    <div class="row" style="width: 1000px; margin-left: auto; margin-right: auto; padding: 2px 2px 2px 17px">
+        <div class="imagePanel">
+            <div class="imageWrapper">
+                <a href="#" class="js-gridImage"><img class="gridImage" src="~/content/images/img_20150523_142454022_hdr.jpg" /></a>
+            </div>
+            <div class="btn-group actionButtonGroup">
+                <div class="btn actionButtonGroup-button js-moreOptions-button js-overlayPanel-button" data-panelName="moreOptions">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </div>
+                <div class="btn actionButtonGroup-button js-comments-button js-overlayPanel-button" data-panelName="comments">
+                    <span class="glyphicon glyphicon-comment"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
+            </div>
+            <div id="js-moreOptions-this" class="js-overlayPanel js-moreOptions-panel" data-hidden="true">
+                <div class="imagePanel-overlay">
+                </div>
+                <div class="imagePanel-overlayText">
+                    SEE MORE PHOTOS OF THIS LOCATION >
+                </div>
+            </div>
+            <div id="js-moreOptions-this" class="js-overlayPanel js-comments-panel" data-hidden="true">
+                <div class="imagePanel-overlay">
+                </div>
+                <div class="imagePanel-overlayText">
+                    + ADD A COMMENT
+                </div>
+            </div>
+        </div>
+        <div class="imagePanel">
+            <div class="imageWrapper">
+                <img class="gridImage" src="~/content/images/img_20150622_192903565.jpg" />
+            </div>
+            <div class="btn-group actionButtonGroup">
+                <div class="btn actionButtonGroup-button js-moreOptions-button js-overlayPanel-button" data-panelName="moreOptions">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </div>
+                <div class="btn actionButtonGroup-button js-comments-button js-overlayPanel-button" data-panelName="comments">
+                    <span class="glyphicon glyphicon-comment"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
+            </div>
+            <div id="js-moreOptions-this" class="js-overlayPanel js-moreOptions-panel" data-hidden="true">
+                <div class="imagePanel-overlay">
+                </div>
+                <div class="imagePanel-overlayText">
+                    SEE MORE PHOTOS OF THIS LOCATION >
+                </div>
+            </div>
+            <div id="js-moreOptions-this" class="js-overlayPanel js-comments-panel" data-hidden="true">
+                <div class="imagePanel-overlay">
+                </div>
+                <div class="imagePanel-overlayText">
+                    + ADD A COMMENT
+                </div>
+            </div>
+        </div>
+        <div class="imagePanel">
+            <div class="imageWrapper">
+                <img class="gridImage" src="~/content/images/img_20150704_122901472.jpg" />
+            </div>
+            <div class="btn-group actionButtonGroup">
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-comment"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
+            </div>
+        </div>
+        <div class="imagePanel">
+            <div class="imageWrapper">
+                <img class="gridImage" src="~/content/images/img_20150822_184754893.jpg" />
+            </div>
+            <div class="btn-group actionButtonGroup">
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-comment"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
+            </div>
+        </div>
+        <div class="imagePanel">
+            <div class="imageWrapper">
+                <img class="gridImage" src="~/content/images/img_20150915_100925711.jpg" />
+            </div>
+            <div class="btn-group actionButtonGroup">
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-comment"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container gridContainer">
+    <div class="row" style="width: 95%; max-width: 1000px; margin-left: auto; margin-right: auto; padding: 2px 2px 2px 17px">
+        <div class="imagePanel">
+            <div class="imageWrapper">
+                <a href="#" class="js-gridImage"><img class="gridImage" src="~/content/images/img_20150523_142454022_hdr.jpg" /></a>
+            </div>
+            <div class="btn-group actionButtonGroup">
+                <div class="btn actionButtonGroup-button js-moreOptions-button js-overlayPanel-button" data-panelName="moreOptions">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </div>
+                <div class="btn actionButtonGroup-button js-comments-button js-overlayPanel-button" data-panelName="comments">
+                    <span class="glyphicon glyphicon-comment"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
+            </div>
+            <div id="js-moreOptions-this" class="js-overlayPanel js-moreOptions-panel" data-hidden="true">
+                <div class="imagePanel-overlay">
+                </div>
+                <div class="imagePanel-overlayText">
+                    SEE MORE PHOTOS OF THIS LOCATION >
+                </div>
+            </div>
+            <div id="js-moreOptions-this" class="js-overlayPanel js-comments-panel" data-hidden="true">
+                <div class="imagePanel-overlay">
+                </div>
+                <div class="imagePanel-overlayText">
+                    + ADD A COMMENT
+                </div>
+            </div>
+        </div>
+        <div class="imagePanel">
+            <div class="imageWrapper">
+                <img class="gridImage" src="~/content/images/img_20150622_192903565.jpg" />
+            </div>
+            <div class="btn-group actionButtonGroup">
+                <div class="btn actionButtonGroup-button js-moreOptions-button js-overlayPanel-button" data-panelName="moreOptions">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </div>
+                <div class="btn actionButtonGroup-button js-comments-button js-overlayPanel-button" data-panelName="comments">
+                    <span class="glyphicon glyphicon-comment"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
+            </div>
+            <div id="js-moreOptions-this" class="js-overlayPanel js-moreOptions-panel" data-hidden="true">
+                <div class="imagePanel-overlay">
+                </div>
+                <div class="imagePanel-overlayText">
+                    SEE MORE PHOTOS OF THIS LOCATION >
+                </div>
+            </div>
+            <div id="js-moreOptions-this" class="js-overlayPanel js-comments-panel" data-hidden="true">
+                <div class="imagePanel-overlay">
+                </div>
+                <div class="imagePanel-overlayText">
+                    + ADD A COMMENT
+                </div>
+            </div>
+        </div>
+        <div class="imagePanel">
+            <div class="imageWrapper">
+                <img class="gridImage" src="~/content/images/img_20150704_122901472.jpg" />
+            </div>
+            <div class="btn-group actionButtonGroup">
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-comment"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
+            </div>
+        </div>
+        <div class="imagePanel">
+            <div class="imageWrapper">
+                <img class="gridImage" src="~/content/images/img_20150822_184754893.jpg" />
+            </div>
+            <div class="btn-group actionButtonGroup">
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-comment"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
+            </div>
+        </div>
+        <div class="imagePanel">
+            <div class="imageWrapper">
+                <img class="gridImage" src="~/content/images/img_20150915_100925711.jpg" />
+            </div>
+            <div class="btn-group actionButtonGroup">
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-comment"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container gridContainer">
+    <div class="row" style="width: 95%; max-width: 1000px; margin-left: auto; margin-right: auto; padding: 2px 2px 2px 17px">
+        <div class="imagePanel">
+            <div class="imageWrapper">
+                <a href="#" class="js-gridImage"><img class="gridImage" src="~/content/images/img_20150523_142454022_hdr.jpg" /></a>
+            </div>
+            <div class="btn-group actionButtonGroup">
+                <div class="btn actionButtonGroup-button js-moreOptions-button js-overlayPanel-button" data-panelName="moreOptions">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </div>
+                <div class="btn actionButtonGroup-button js-comments-button js-overlayPanel-button" data-panelName="comments">
+                    <span class="glyphicon glyphicon-comment"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
+            </div>
+            <div id="js-moreOptions-this" class="js-overlayPanel js-moreOptions-panel" data-hidden="true">
+                <div class="imagePanel-overlay">
+                </div>
+                <div class="imagePanel-overlayText">
+                    SEE MORE PHOTOS OF THIS LOCATION >
+                </div>
+            </div>
+            <div id="js-moreOptions-this" class="js-overlayPanel js-comments-panel" data-hidden="true">
+                <div class="imagePanel-overlay">
+                </div>
+                <div class="imagePanel-overlayText">
+                    + ADD A COMMENT
+                </div>
+            </div>
+        </div>
+        <div class="imagePanel">
+            <div class="imageWrapper">
+                <img class="gridImage" src="~/content/images/img_20150622_192903565.jpg" />
+            </div>
+            <div class="btn-group actionButtonGroup">
+                <div class="btn actionButtonGroup-button js-moreOptions-button js-overlayPanel-button" data-panelName="moreOptions">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </div>
+                <div class="btn actionButtonGroup-button js-comments-button js-overlayPanel-button" data-panelName="comments">
+                    <span class="glyphicon glyphicon-comment"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
+            </div>
+            <div id="js-moreOptions-this" class="js-overlayPanel js-moreOptions-panel" data-hidden="true">
+                <div class="imagePanel-overlay">
+                </div>
+                <div class="imagePanel-overlayText">
+                    SEE MORE PHOTOS OF THIS LOCATION >
+                </div>
+            </div>
+            <div id="js-moreOptions-this" class="js-overlayPanel js-comments-panel" data-hidden="true">
+                <div class="imagePanel-overlay">
+                </div>
+                <div class="imagePanel-overlayText">
+                    + ADD A COMMENT
+                </div>
+            </div>
+        </div>
+        <div class="imagePanel">
+            <div class="imageWrapper">
+                <img class="gridImage" src="~/content/images/img_20150704_122901472.jpg" />
+            </div>
+            <div class="btn-group actionButtonGroup">
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-comment"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
+            </div>
+        </div>
+        <div class="imagePanel">
+            <div class="imageWrapper">
+                <img class="gridImage" src="~/content/images/img_20150822_184754893.jpg" />
+            </div>
+            <div class="btn-group actionButtonGroup">
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-comment"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
+            </div>
+        </div>
+        <div class="imagePanel">
+            <div class="imageWrapper">
+                <img class="gridImage" src="~/content/images/img_20150915_100925711.jpg" />
+            </div>
+            <div class="btn-group actionButtonGroup">
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-comment"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                </div>
+                <div class="btn actionButtonGroup-button">
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    (function () {
+        $(window).scroll(function () {
+            $("").show();
+        });
+    })
+</script>
+

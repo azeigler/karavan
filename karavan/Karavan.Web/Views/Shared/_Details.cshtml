@@ -1,0 +1,223 @@
+﻿@model Karavan.Web.Models.ImageViewModel
+
+    <div class="js-modal-bg detailModal-background" style="display: none"></div>
+    <div class="js-modal detailModal" style="display: none">
+            <a href="#" class="roundButton closeButton js-closeButton">
+                <span class="glyphicon glyphicon-remove"></span>
+            </a>
+            <div class="row">
+                <div class="col-md-5 col-sm-12" style="font-family: 'Special Elite', serif; padding-right: 0">
+                    <img src="~/content/images/840.jpg" style="width: 420px; max-width: 100%;" />
+                    <div class="actionButton" style="position: absolute; top: 0; right: 0; ">456 Likes <span class="glyphicon glyphicon-star"></span></div>
+                    <div class="typeLabel u-fullWidth u-topFive">USERNAME1234 02/03/2010</div>
+                    <div class="typeLabel u-fullWidth u-topFive">WILLIS TOWER</div>
+                </div>
+                <div class="col-md-7 col-sm-12">
+                    <div>
+                        <span class="modalHeading">Location:</span>
+                    </div>
+                    <div>
+                        <iframe frameborder="0" style="border:0; width: 100%; height: 285px" src="https://www.google.com/maps/embed/v1/place?q=41.8785%C2%B0%20%2C%20-87.6383333333333%C2%B0%20&key=AIzaSyB8g2JYH9TFBFvbbS_3AWlsUYpYaBWFWkw" allowfullscreen></iframe>
+                    </div>
+                    <div>
+                        <span class="modalHeading">Comments:</span>
+                        <div class="btn actionButton u-right">
+                            + Add a New Comment <span class="glyphicon glyphicon-comment"></span>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="detailModal-comments">
+                        <div class="comment">
+                            <textarea></textarea>
+                            <span class="comment-userData u-bold">
+                                ReallyLongUserName12345
+                            </span>
+                            <span>This is a comment on the photo. This place was cool. I went there last summer. blah blah blah blah</span>
+                            <div class="comment-userData">
+                                <span style="color: grey;">12/12/12 10:00AM | </span>
+                                <a href="#" style="color: #004747; padding: 0">
+                                    Reply <span class="glyphicon glyphicon-comment"></span>
+                                </a>
+                                <a href="#" class="btn actionButton" style="display:none">
+                                    Submit Comment
+                                </a>
+                            </div>
+                            <hr class="u-topFive" />
+                        </div>
+                        <div class="comment">
+                            <textarea></textarea>
+                            <span class="comment-userData u-bold">
+                                ReallyLongUserName12345
+                            </span>
+                            <span>This is a comment on the photo. This place was cool. I went there last summer. blah blah blah blah</span>
+                            <div class="comment-userData">
+                                <span style="color: grey;">12/12/12 10:00AM | </span>
+                                <a href="#" style="color: #004747; padding: 0">
+                                    Reply <span class="glyphicon glyphicon-comment"></span>
+                                </a>
+                                <a href="#" class="btn actionButton" style="display:none">
+                                    Submit Comment
+                                </a>
+                            </div>
+                            <hr class="u-topFive" />
+                        </div>
+                        <div class="comment">
+                            <textarea></textarea>
+                            <span class="comment-userData u-bold">
+                                ReallyLongUserName12345
+                            </span>
+                            <span>This is a comment on the photo. This place was cool. I went there last summer. blah blah blah blah</span>
+                            <div class="comment-userData">
+                                <span style="color: grey;">12/12/12 10:00AM | </span>
+                                <a href="#" style="color: #004747; padding: 0">
+                                    Reply <span class="glyphicon glyphicon-comment"></span>
+                                </a>
+                                <a href="#" class="btn actionButton" style="display:none">
+                                    Submit Comment
+                                </a>
+                            </div>
+                            <hr class="u-topFive" />
+                        </div>
+                        <div class="comment">
+                            <textarea></textarea>
+                            <span class="comment-userData u-bold">
+                                UserName12345
+                            </span>
+                            <span>This is a comment on the photo. This place was cool.</span>
+                            <div class="comment-userData">
+                                <span style="color: grey;">12/12/12 10:00AM | </span>
+                                <a href="#" style="color: #004747; padding: 0">
+                                    Reply <span class="glyphicon glyphicon-comment"></span>
+                                </a>
+                                <a href="#" class="btn actionButton" style="display:none">
+                                    Submit Comment
+                                </a>
+                            </div>
+                            <hr class="u-topFive" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @*<a href="#" class="roundButton closeButton js-closeButton">
+            <span class="glyphicon glyphicon-remove"></span>
+        </a>*@
+        @*<div class="row">
+            <div class="col-md-5" style="font-family: 'Special Elite', serif; padding-right: 0">
+                <img src="~/content/images/840.jpg" style="width: 360px; max-width: 100%;" />
+                <div class="typeLabel u-fullWidth u-topFive">USERNAME1234 02/03/2010</div>
+                <div class="typeLabel u-fullWidth u-topFive">LANDMARKS</div>
+                <div class="typeLabel u-fullWidth u-topFive">WILLIS TOWER</div>
+            </div>
+            <div class="col-md-7">
+                <div style="padding-right: 5px">
+                    <span class="modalHeading">Location:</span>
+                    <div class="btn actionButton u-right">
+                        Open in Google Maps
+                    </div>
+                </div>
+                <div>
+                    <iframe width="482" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=41.8785%C2%B0%20%2C%20-87.6383333333333%C2%B0%20&key=AIzaSyB8g2JYH9TFBFvbbS_3AWlsUYpYaBWFWkw" allowfullscreen></iframe>
+                </div>
+                <div style="padding-right: 5px;">
+                    <span class="modalHeading">Comments:</span>
+                    <div class="btn actionButton u-right">
+                        + Add a New Comment <span class="glyphicon glyphicon-comment"></span>
+                    </div>
+                </div>
+                <hr />
+                <div class="detailModal-comments">
+                    <textarea></textarea>
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <div>This is a comment on the photo.</div>
+                            <a href="#" class="btn actionButton">
+                                + Comment <span class="glyphicon glyphicon-comment"></span>
+                            </a>
+                            <a href="#" class="btn actionButton" style="display:none">
+                                Submit Comment
+                            </a>
+                        </div>
+                        <div class="col-sm-5" style="color: #004747">
+                            <div class="comment-userData">
+                                <span class="u-bold">ReallyLongUserName12345</span>
+                                <span>01/01/11 12:00AM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea></textarea>
+                    <hr class="u-topFive"/>
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <div>This is a comment on the photo.</div>
+                            <a href="#" class="btn actionButton">
+                                + Comment <span class="glyphicon glyphicon-comment"></span>
+                            </a>
+                            <a href="#" class="btn actionButton" style="display:none">
+                                Submit Comment
+                            </a>
+                        </div>
+                        <div class="col-sm-5" style="color: #004747">
+                            <div class="comment-userData">
+                                <span class="u-bold">ReallyLongUserName12345</span>
+                                <span>01/01/11 12:00AM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="u-topFive" />
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <div>This is a comment on the photo.</div>
+                            <a href="#" class="btn actionButton">
+                                + Comment <span class="glyphicon glyphicon-comment"></span>
+                            </a>
+                            <a href="#" class="btn actionButton" style="display:none">
+                                Submit Comment
+                            </a>
+                        </div>
+                        <div class="col-sm-5" style="color: #004747">
+                            <div class="comment-userData">
+                                <span class="u-bold">ReallyLongUserName12345</span>
+                                <span>01/01/11 12:00AM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="u-topFive" />
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <div>This is a comment on the photo.</div>
+                            <a href="#" class="btn actionButton">
+                                + Comment <span class="glyphicon glyphicon-comment"></span>
+                            </a>
+                            <a href="#" class="btn actionButton" style="display:none">
+                                Submit Comment
+                            </a>
+                        </div>
+                        <div class="col-sm-5" style="color: #004747">
+                            <div class="comment-userData">
+                                <span class="u-bold">ReallyLongUserName12345</span>
+                                <span>01/01/11 12:00AM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="u-topFive" />
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <div>This is a comment on the photo.</div>
+                            <a href="#" class="btn actionButton">
+                                + Comment <span class="glyphicon glyphicon-comment"></span>
+                            </a>
+                            <a href="#" class="btn actionButton" style="display:none">
+                                Submit Comment
+                            </a>
+                        </div>
+                        <div class="col-sm-5" style="color: #004747">
+                            <div class="comment-userData">
+                                <span class="u-bold">ReallyLongUserName12345</span>
+                                <span>01/01/11 12:00AM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+        </div>
+

@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | Karavan</title>
+    @Styles.Render("~/Content/css")
+    <link href='https://fonts.googleapis.com/css?family=Special+Elite|Work+Sans:400,600|Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_Details.cshtml")
+    <div class="navbar navbar-fixed-top">
+        <div class="container">
+            <a href="@Url.Action("Index", "Home")" class="col-lg-10 col-md-9 col-sm-8">
+                <div class="menuButton">k</div>
+                <div class="menuButton">a</div>
+                <div class="menuButton">r</div>
+                <div class="menuButton">a</div>
+                <div class="menuButton">v</div>
+                <div class="menuButton">a</div>
+                <div class="menuButton">n</div>
+            </a>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <a href="@Url.Action("Upload", "Home")" class="btn roundButton u-topThirty">
+                    <span class="glyphicon glyphicon-picture"></span>
+                </a>                                                                                                                                                        
+                <div class="btn roundButton u-topThirty">
+                    <span class="glyphicon glyphicon-folder-open"></span>
+                </div>                                                                                                                                                        
+                <a href="@Url.Action("Search", "Home")"class="btn roundButton u-topThirty">
+                    <span class="glyphicon glyphicon-search"></span>
+                </a>
+                <div class="btn roundButton u-topThirty">
+                    <span class="glyphicon glyphicon-cog"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-content">
+        @RenderBody()        
+    </div>
+    <footer>
+        <div class="container">
+            <p class="u-topFive u-right">&copy; @DateTime.Now.Year karavan</p>
+        </div>
+    </footer>
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/app/Modal.js")
+    @Scripts.Render("~/Scripts/app/Search.js")
+    @Scripts.Render("~/Scripts/app/ImageOverlay.js")
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        var minHeight = window.innerHeight - ($('.navbar').height() + $('footer').height());
+        $('.body-content').css('min-height', minHeight);
+    </script>
+</body>
+</html>
