@@ -14,13 +14,34 @@ namespace Karavan.Test.Tests
         [TestCase]
         public void GetGoogleUrl()
         {
-            var file = "C:/Users/Ashley/Pictures/840.JPG";
+            var file = AppDomain.CurrentDomain.BaseDirectory + "/Content/Images/840.JPG";
             var coordinates = GoogleMapsHelper.GetCoordinates(file);
-            var url = GoogleMapsHelper.GetMapsUrl(coordinates);
+            Assert.IsNotNullOrEmpty(coordinates.ToString());
 
+            var url = GoogleMapsHelper.GetMapsUrl(coordinates);
+            Assert.IsNotNullOrEmpty(url.ToString());
+            Assert.Pass("Lat: " + coordinates.Latitude.ToString() + " Long: " + coordinates.Longitude.ToString() + " Url: " + url.ToString());
+        }
+
+        [TestCase]
+        public void GetPlaces()
+        {
             var results = GoogleMapsHelper.SearchPlaces(new GpsCoordinates() { Latitude = 40.693162, Longitude = -74.0559406 });
+            Assert.IsNotNullOrEmpty(results.ToString());
+            var resultsMessage = "Results: ";
+            foreach (var result in results)
+            {
+                resultsMessage += result.Name + ", ";
+            }
 
             var closest = GoogleMapsHelper.GetClosestPlaces(results, new GpsCoordinates() { Latitude = 40.6923152, Longitude = -74.0574686 });
+            Assert.IsNotNullOrEmpty(closest.ToString());
+            var closestMessage = " Closest: ";
+            foreach (var result in closest)
+            {
+                closestMessage += result.Name + ", ";
+            }
+            Assert.Pass(resultsMessage + closestMessage);
         }
     }
 }

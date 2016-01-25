@@ -5,7 +5,7 @@ Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="uploadPanel" style="background-color: #414141">
-    <div class="row">
+    <div class="row" id="js-upload-location">
         <div class="col-md-5 col-sm-12" style="font-family: 'Special Elite', serif;">
             <img src="~/content/images/no-image.jpg" style="width: 390px" />
             <div style="position: absolute; top: 70px; width: 100%; text-align: center">
@@ -13,14 +13,14 @@ Layout = "~/Views/Shared/_Layout.cshtml";
             </div>      
         </div>
         <div class="col-md-7 col-sm-12" style="padding-left: 5px">
+            <div style="display: inline-block; color: white; background-color: #7a7a7a; padding: 5px 10px 0px 10px;">
+                <span class="modalHeading">1. Edit</span>
+            </div>
             <div style="display: inline-block; background-color: white; padding: 5px 10px 0px 10px;">
-                <span class="modalHeading">1. Location</span>
+                <span class="modalHeading">2. Select Location</span>
             </div>
             <div style="display: inline-block; background-color: #7a7a7a; color: white; padding: 5px 10px 0px 10px;">
-                <span class="modalHeading">2. Location</span>
-            </div>
-            <div style="display: inline-block; background-color: #7a7a7a; color: white; padding: 5px 10px 0px 10px;">
-                <span class="modalHeading">3. Location</span>
+                <span class="modalHeading">3. Upload</span>
             </div>
             <div style=" padding: 5px; background-color: white; height: 477px">
                 <div class="u-leftFive u-bold" style="margin: 10px">Does your photo contain any of these places? Select all that apply.</div>
@@ -31,28 +31,29 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                     <div class="btn typeLabel u-fullWidth">Liberty Island</div>
                 </div>
                 <div class="col-md-6" style="padding:5px">
-                    <div class="btn typeLabel u-fullWidth">The Statue of Liberty</div>
+                    <div class="btn typeLabel u-fullWidth">Place 3</div>
                 </div>
                 <div class="col-md-6" style="padding:5px">
-                    <div class="btn typeLabel u-fullWidth">Liberty Island</div>
+                    <div class="btn typeLabel u-fullWidth">Place 4</div>
                 </div>
                 <div class="col-md-6" style="padding:5px">
-                    <div class="btn typeLabel u-fullWidth">The Statue of Liberty</div>
+                    <div class="btn typeLabel-selected u-fullWidth">Place 5</div>
                 </div>
                 <div class="col-md-6" style="padding:5px">
-                    <div class="btn typeLabel u-fullWidth">Liberty Island</div>
+                    <div class="btn typeLabel u-fullWidth">Place 6</div>
                 </div>
                 <div class="col-md-6" style="padding:5px">
-                <div class="btn typeLabel u-fullWidth">Liberty Island</div>
+                <div class="btn typeLabel u-fullWidth">Place 7</div>
                 </div>
                 <div class="col-md-6" style="padding:5px">
-                    <div class="btn typeLabel u-fullWidth">The Statue of Liberty</div>
+                    <div class="btn typeLabel u-fullWidth">Place 8</div>
                 </div>
                 <div class="col-md-6" style="padding:5px">
-                    <div class="btn typeLabel u-fullWidth">Liberty Island</div>
+                    <div class="btn typeLabel u-fullWidth">Place 9</div>
                 </div>
             </div>
         </div>
+        <div class="btn uploadNextButton">next</div>
     </div>
     @*<a href="#" class="roundButton closeButton js-closeButton">
             <span class="glyphicon glyphicon-remove"></span>
