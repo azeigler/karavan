@@ -141,7 +141,7 @@ footer {
 }
 
 .detailModal-comments {
-    height: 220px; 
+    height: 315px;
     overflow-y: scroll; 
     overflow-x: hidden;
 }
@@ -362,12 +362,14 @@ footer {
     text-align: center; 
     border: 2px solid #004747; 
     float: left;
-    bottom: 25px; 
-    right: 25px; 
+    bottom: 45px; 
+    right: 45px; 
     width: 50px; 
     height: 50px; 
     border-radius:25px; 
 }
+
+.map { -webkit-filter: grayscale(100%); }
 
 .uploadNextButton:hover {
     color: white;
