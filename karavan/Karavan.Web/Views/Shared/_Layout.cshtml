@@ -55,5 +55,11 @@
         var minHeight = window.innerHeight - ($('.navbar').height() + $('footer').height());
         $('.body-content').css('min-height', minHeight);
     </script>
+    <script type="text/javascript">
+    $(function() {
+        var height = $("#js-uploadPanel").height() -49;
+        $(".js-uploadPanelTextBox").height(height + "px");
+    })
+    </script>
 </body>
 </html>
