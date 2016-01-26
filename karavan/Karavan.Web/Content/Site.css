@@ -141,7 +141,7 @@ footer {
 }
 
 .detailModal-comments {
-    height: 315px;
+    height: 285px;
     overflow-y: scroll; 
     overflow-x: hidden;
 }
