@@ -12,21 +12,23 @@
                     <div class="typeLabel u-fullWidth u-topFive">USERNAME1234 02/03/2010</div>
                     <div class="typeLabel u-fullWidth u-topFive">WILLIS TOWER</div>
                 </div>
-                <div class="col-md-7 col-sm-12">
-                    <div>
-                        <span class="modalHeading">Location:</span>
-                    </div>
-                    <div>
-                        <iframe frameborder="0" class="map" style="border:0; width: 100%; height: 285px; " src="https://www.google.com/maps/embed/v1/place?q=41.8785%C2%B0%20%2C%20-87.6383333333333%C2%B0%20&key=AIzaSyB8g2JYH9TFBFvbbS_3AWlsUYpYaBWFWkw" allowfullscreen></iframe>
-                    </div>
-                    <div>
-                        <span class="modalHeading">Comments:</span>
-                        <div class="btn actionButton u-right">
-                            + Add a New Comment <span class="glyphicon glyphicon-comment"></span>
+                <div class="col-md-7 col-sm-12 js-imageInfoContainer">
+                    <div class="js-locationPanel">
+                        <div>
+                            <span class="modalHeading">Location:</span>
+                        </div>
+                        <div>
+                            <iframe frameborder="0" class="map" style="border: 0; width: 100%; height: 285px;" src="https://www.google.com/maps/embed/v1/place?q=41.8785%C2%B0%20%2C%20-87.6383333333333%C2%B0%20&key=AIzaSyB8g2JYH9TFBFvbbS_3AWlsUYpYaBWFWkw" allowfullscreen></iframe>
                         </div>
                     </div>
-                    <hr />
-                    <div class="detailModal-comments">
+                    <div class="detailModal-comments js-commentsPanel">
+                        <div>
+                            <span class="modalHeading">Comments:</span>
+                            <div class="btn actionButton u-right">
+                                + Add a New Comment <span class="glyphicon glyphicon-comment"></span>
+                            </div>
+                        </div>
+                        <hr />
                         <div class="comment">
                             <textarea></textarea>
                             <span class="comment-userData u-bold">
@@ -38,28 +40,11 @@
                                 <a href="#" style="color: #004747; padding: 0">
                                     Reply <span class="glyphicon glyphicon-comment"></span>
                                 </a>
-                                <a href="#" class="btn actionButton" style="display:none">
+                                <a href="#" class="btn actionButton" style="display: none">
                                     Submit Comment
                                 </a>
                             </div>
-                            <hr class="u-topFive" />
-                        </div>
-                        <div class="comment">
-                            <textarea></textarea>
-                            <span class="comment-userData u-bold">
-                                ReallyLongUserName12345
-                            </span>
-                            <span>This is a comment on the photo. This place was cool. I went there last summer. blah blah blah blah</span>
-                            <div class="comment-userData">
-                                <span style="color: grey;">12/12/12 10:00AM | </span>
-                                <a href="#" style="color: #004747; padding: 0">
-                                    Reply <span class="glyphicon glyphicon-comment"></span>
-                                </a>
-                                <a href="#" class="btn actionButton" style="display:none">
-                                    Submit Comment
-                                </a>
-                            </div>
-                            <hr class="u-topFive" />
+                            <hr class="u-topFive"/>
                         </div>
                         <div class="comment">
                             <textarea></textarea>
@@ -72,18 +57,18 @@
                                 <a href="#" style="color: #004747; padding: 0">
                                     Reply <span class="glyphicon glyphicon-comment"></span>
                                 </a>
-                                <a href="#" class="btn actionButton" style="display:none">
+                                <a href="#" class="btn actionButton" style="display: none">
                                     Submit Comment
                                 </a>
                             </div>
-                            <hr class="u-topFive" />
+                            <hr class="u-topFive"/>
                         </div>
                         <div class="comment">
                             <textarea></textarea>
                             <span class="comment-userData u-bold">
-                                UserName12345
+                                ReallyLongUserName12345
                             </span>
-                            <span>This is a comment on the photo. This place was cool.</span>
+                            <span>This is a comment on the photo. This place was cool. I went there last summer. blah blah blah blah</span>
                             <div class="comment-userData">
                                 <span style="color: grey;">12/12/12 10:00AM | </span>
                                 <a href="#" style="color: #004747; padding: 0">
@@ -140,11 +125,28 @@
                                 <a href="#" style="color: #004747; padding: 0">
                                     Reply <span class="glyphicon glyphicon-comment"></span>
                                 </a>
-                                <a href="#" class="btn actionButton" style="display:none">
+                                <a href="#" class="btn actionButton" style="display: none">
                                     Submit Comment
                                 </a>
                             </div>
-                            <hr class="u-topFive" />
+                            <hr class="u-topFive"/>
+                        </div>
+                        <div class="comment">
+                            <textarea></textarea>
+                            <span class="comment-userData u-bold">
+                                UserName12345
+                            </span>
+                            <span>This is a comment on the photo. This place was cool.</span>
+                            <div class="comment-userData">
+                                <span style="color: grey;">12/12/12 10:00AM | </span>
+                                <a href="#" style="color: #004747; padding: 0">
+                                    Reply <span class="glyphicon glyphicon-comment"></span>
+                                </a>
+                                <a href="#" class="btn actionButton" style="display: none">
+                                    Submit Comment
+                                </a>
+                            </div>
+                            <hr class="u-topFive"/>
                         </div>
                     </div>
                 </div>
