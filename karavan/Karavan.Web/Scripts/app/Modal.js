@@ -13,8 +13,9 @@ var k = {
         $('.js-closeButton').click(function () {
             modalHide('.js-modal'); return false;
         });
-        $('.js-gridImage').click(function () {
+        $('.js-gridImage').click(function () {            
             modalShow('.js-modal');
+            $(".js-imageInfoContainer").height(($(".js-imagePreviewContainer").height() + 30) + "px");
             var commentsPanelHeight = $(".js-imageInfoContainer").height() - $(".js-locationPanel").height();
             $(".js-commentsPanel").height((commentsPanelHeight - 30) + "px");
             return false;
